@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/noel-registration-form.props" />
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "noel-registration-form/1.0.0": {
+        "runtime": {
+          "noel-registration-form.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "noel-registration-form/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

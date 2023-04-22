@@ -1,0 +1,21 @@
+﻿@model noel_registration_form.Models.ConfirmationViewModel
+
+<h1>Thank you for your reservation, @Model.Reservation.FullName!</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Reservation Details</h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Email Address: @Model.Reservation.Email</li>
+            <li class="list-group-item">Phone Number: @Model.Reservation.Phone</li>
+            <li class="list-group-item">Check-in Date: @Model.Reservation.CheckIn</li>
+            <li class="list-group-item">Check-out Date: @Model.Reservation.CheckOut</li>
+            <li class="list-group-item">Number of Nights: @Model.Reservation.Nights</li>
+            <li class="list-group-item">Number of Adults: @Model.Reservation.Adults</li>
+            <li class="list-group-item">Room Type: @Model.Reservation.RoomType</li>
+            <li class="list-group-item">Bed Type: @Model.Reservation.BedType</li>
+            <li class="list-group-item">Smoking Room: @Model.Reservation.Smoking</li>
+            <li class="list-group-item">Special Requests: @Model.Reservation.SpecialRequests</li>
+        </ul>
+    </div>
+</div>

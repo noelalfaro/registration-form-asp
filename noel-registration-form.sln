@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "noel-registration-form", "noel-registration-form\noel-registration-form.csproj", "{14545B1C-65C4-447D-8B51-CA0868963BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14545B1C-65C4-447D-8B51-CA0868963BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14545B1C-65C4-447D-8B51-CA0868963BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14545B1C-65C4-447D-8B51-CA0868963BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14545B1C-65C4-447D-8B51-CA0868963BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DCB4000-660C-4D31-B84A-C38A788B811C}
+	EndGlobalSection
+EndGlobal

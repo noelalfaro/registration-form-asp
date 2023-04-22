@@ -1,0 +1,97 @@
+﻿@model noel_registration_form.Models.Reservation
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Royal Inn and Suites</h1>
+<h2 id="slogan">Where you’re always treated like royalty</h2>
+<form asp-action="Submit">
+    <h4>Dates</h4>
+    <div class="form-group">
+        <label for="CheckIn" class="label">Check-in Date</label>
+        <input type="date" class="form-control" id="check-in" name="checkIn" asp-for="CheckIn" data-format="yyyy-mm-dd" />
+        <span asp-validation-for="CheckIn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="CheckOut" class="label">Check-Out Date</label>
+        <input type="date" class="form-control" id="check-out" name="checkOut" asp-for="CheckOut" data-format="yyyy-mm-dd" />
+        <span asp-validation-for="CheckOut" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Nights" class="label">Number of Nights:</label>
+        <select class="form-control" id="Nights" name="Nights" asp-for="Nights">
+            <option value="">-- Select number of nights --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10+</option>
+        </select>
+        <span asp-validation-for="Nights" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Adults" class="label">Number of Adults</label>
+        <input type="number" class="form-control" id="adults" name="adults" asp-for="Adults" />
+        <span asp-validation-for="Adults" class="text-danger"></span>
+    </div>
+
+
+    <h4>Preferences</h4>
+    <div class="form-group">
+        <label for="RoomType" class="label">Room Type</label>
+        <div>
+            <label><input type="radio" asp-for="RoomType" value="Standard">Standard</label>
+            <label><input type="radio" asp-for="RoomType" value="Business">Business</label>
+            <label><input type="radio" asp-for="RoomType" value="Suite">Suite</label>
+        </div>
+        <span asp-validation-for="RoomType" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="BedType" class="label">Bed Type</label>
+        <div>
+            <label><input type="radio" asp-for="BedType" value="King">King</label>
+            <label><input type="radio" asp-for="BedType" value="Queen">Queen</label>
+            <label><input type="radio" asp-for="BedType" value="Double">Double</label>
+        </div>
+        <span asp-validation-for="BedType" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" asp-for="Smoking" />
+        <label class="form-check-label" for="Smoking">Smoking Allowed</label>
+    </div>
+    <div class="form-group">
+        <label for="SpecialRequests">Special Requests</label>
+        <textarea class="form-control" id="special-requests" name="SpecialRequests" asp-for="SpecialRequests"></textarea>
+        <span asp-validation-for="SpecialRequests" class="text-danger"></span>
+    </div>
+
+    <h4>Contact Information</h4>
+    <div class="form-group">
+        <label for="FullName" class="label">Full Name:</label>
+        <input type="text" class="form-control" id="FullName" name="FullName" asp-for="FullName" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Email" class="label">Email Address:</label>
+        <input type="email" class="form-control" id="Email" name="Email" asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Phone" class="label">Phone Number:</label>
+        <input type="tel" class="form-control" id="Phone" name="Phone" asp-for="Phone" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+    </div>
+
+</form>

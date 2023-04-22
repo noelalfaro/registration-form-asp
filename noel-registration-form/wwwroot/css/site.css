@@ -1,0 +1,97 @@
+﻿/* Set font family and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+/* Set background color and text alignment for the header */
+h1, h2 {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Add padding to the header */
+h1, h2, form {
+    padding: 20px;
+    background-color: #F9F9F9;
+}
+
+/* Set border and border-radius for form elements */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Set margin and padding for form groups */
+.form-group {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 50%;
+}
+
+.form-check{
+    padding: 0 10px;
+}
+/* Set label styles */
+.label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Set style for radio and checkbox input groups */
+.form-group div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+    .form-group div label {
+        margin-right: 10px;
+    }
+
+
+.form-check-label {
+    margin-right: 10px;
+    
+}
+
+/* Set style for validation error messages */
+.field-validation-error {
+    color: #dc3545;
+    font-size: small;
+}
+
+/* Set style for submit and reset buttons */
+button[type="submit"], button[type="reset"] {
+    margin-right: 10px;
+}
+
+/* Set style for special requests text area */
+#special-requests {
+    height: 150px;
+}
+
+/* Add hover effect to buttons */
+.btn:hover {
+    opacity: 0.8;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card-body {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+    font-weight: bold;
+    margin: -20px -20px 20px;
+    padding: 20px;
+    text-align: center;
+}
